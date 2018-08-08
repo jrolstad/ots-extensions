@@ -1,0 +1,18 @@
+---------- Notification Email ---------- 
+Hi ,
+
+While reviewing the technical screens at https://msots.com , I found that there are reviews assigned to you that have been outstanding for some time.
+Can you complete the review by EOD Friday (8/10)?  If you are unable, please let me know and I will reassign this to someone else.
+
+Thank You,
+Josh Rolstad
+
+---------- Reassigned Email ---------- 
+Hi ,
+
+I assigned you technical screens to review in the Online Technical Screen tool at msots.com .
+These were previously assigned to someone else who could not complete them, can you make an effort to review by EOD Friday (8/10) so we can respond to the candidate in a timely manner?
+ 
+Thank You,
+Josh Rolstad
+

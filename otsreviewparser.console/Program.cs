@@ -14,7 +14,9 @@ namespace otsreviewparser.console
             var outputFile = $"c:\\temp\\reviews-{DateTime.Now.Ticks}.csv";
 
             var reviews = ParseReviewData(path)
-                .OrderByDescending(r => r.CompletionDate);
+                .OrderBy(r => r.ReviewStatus)
+                .ThenByDescending(r => r.CompletionDate)
+                .ToList();
 
             WriteToFile(outputFile, reviews);
 

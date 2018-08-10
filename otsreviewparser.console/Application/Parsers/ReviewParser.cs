@@ -40,17 +40,29 @@ namespace otsreviewparser.console.Application.Parsers
         {
             var reviewer = GetAssignedReviewer(data);
             var completionDate = GetCompletionDate(data);
-
+            var screenStatus = data[5].InnerText;
+            var reviewStatus = GetReviewStatus(data,screenStatus, completionDate);
             return new Review
             {
                 Email = data[1].InnerText,
                 Name = data[2].InnerText,
                 CompletionDate = completionDate,
                 Time = data[4].InnerText,
-                ScreenStatus = data[5].InnerText,
-                ReviewStatus = data[6].InnerText,
+                ScreenStatus = screenStatus,
+                ReviewStatus = reviewStatus,
                 AssignedReviewer = reviewer
             };
+        }
+
+        private static string GetReviewStatus(List<HtmlNode> data, string screenStatus, DateTime? completionDate)
+        {
+
+            if (completionDate < new DateTime(2018, 6, 1) && screenStatus == "Completed")
+            {
+                return "Reviewed";
+            }
+
+            return data[6].InnerText;
         }
 
         private static string GetAssignedReviewer(IReadOnlyList<HtmlNode> data)

@@ -8,8 +8,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		email-templates.txt = email-templates.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "otsextensionssandboxtests", "otsextensionssandboxtests\otsextensionssandboxtests.csproj", "{DAAAAC82-52EF-4517-B9C8-79E74C2EC808}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "otsextensions.mvc", "otsextensions.mvc\otsextensions.mvc.csproj", "{731234F2-4F60-4211-BA43-69986282A4FB}"
 EndProject
 Global
@@ -18,10 +16,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DAAAAC82-52EF-4517-B9C8-79E74C2EC808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DAAAAC82-52EF-4517-B9C8-79E74C2EC808}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DAAAAC82-52EF-4517-B9C8-79E74C2EC808}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DAAAAC82-52EF-4517-B9C8-79E74C2EC808}.Release|Any CPU.Build.0 = Release|Any CPU
 		{731234F2-4F60-4211-BA43-69986282A4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{731234F2-4F60-4211-BA43-69986282A4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{731234F2-4F60-4211-BA43-69986282A4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU

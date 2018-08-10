@@ -22,6 +22,7 @@ namespace otsextensions.mvc.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public FileResult Summary(IFormCollection data)
         {
             var userName = data["UserName"];

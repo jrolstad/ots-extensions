@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using HtmlAgilityPack;
-using otsreviewparser.console.Application.Models;
+using otsextensions.mvc.Application.Models;
 
-namespace otsreviewparser.console.Application.Parsers
+namespace otsextensions.mvc.Application.Parsers
 {
     public class ReviewParser
     {
@@ -24,6 +24,9 @@ namespace otsreviewparser.console.Application.Parsers
                 .SelectNodes("//table[@id='ResponsesTable']//tbody//tr");
 
             var reviews = new List<Review>();
+            if (reviewRows == null)
+                return reviews;
+
             foreach (var row in reviewRows)
             {
                 var data = row

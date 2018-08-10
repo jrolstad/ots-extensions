@@ -1,0 +1,44 @@
+﻿@model otsextensions.mvc.Models.ReviewViewModel
+@{
+    ViewData["Title"] = "Review Analytics";
+}
+
+<h2>Reviews</h2>
+<hr />
+<div class="jumbotron theme-light">
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="type-h3">
+                    Review Summary
+                </div>
+                <div class="type-sh3">
+                    Obtain review data in an easy to manage .csv format.  This requires your msots.com User Name and Pasword to obtain the review data.
+                </div>
+                <p>If no reviews are returned, then your credentials were not accepted by the ots site.</p>
+                <hr/>
+                <br/>
+                <div class="row">
+                    <form asp-action="Summary" class="form-inline">
+                        <div class="row">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <input asp-for="UserName" class="form-control" placeholder="Enter User Name" />
+                                </div>
+                                <div class="form-group">
+                                    <input asp-for="Password" class="form-control" type="password" placeholder="Password" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-10">
+                                <input type="submit" value="Submit" class="btn btn-default" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
